@@ -20,7 +20,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   /* background-color: #fdf777; /* запасной светлый тон под текстуру */
-  background-image: url("wood-light.jpg");
+  background-image: url("img/wood-light.jpg");
   background-size: cover;          /* или '100% auto', если так лучше смотрится */
   background-repeat: repeat;       /* можно попробовать 'no-repeat' + 'cover' */
   background-attachment: fixed;    /* даёт красивый “стационарный” фон */
@@ -469,3 +469,4 @@ footer {
 .model-image-link {
   display: block;
 }
+
