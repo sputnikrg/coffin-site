@@ -301,20 +301,18 @@
       Schreiben Sie uns oder nutzen Sie das Formular – wir melden uns zeitnah bei Ihnen.
     </p>
     <div class="contact-grid">
-  <form name="contact" method="POST" data-netlify="true" action="/success.html">
-  <input type="hidden" name="form-name" value="contact" />
-
+<form id="contactForm">
   <div>
     <label for="company">Firmenname</label>
-    <input id="company" name="company" type="text" placeholder="Bestattungsunternehmen Muster GmbH" />
+    <input id="company" name="company" type="text" placeholder="Bestattungsunternehmen Muster GmbH" required />
   </div>
   <div>
     <label for="person">Ansprechpartner</label>
-    <input id="person" name="person" type="text" placeholder="Herr / Frau ..." />
+    <input id="person" name="person" type="text" placeholder="Herr / Frau ..." required />
   </div>
   <div>
     <label for="email">E-Mail</label>
-    <input id="email" name="email" type="email" placeholder="beispiel@firma.de" />
+    <input id="email" name="email" type="email" placeholder="beispiel@firma.de" required />
   </div>
   <div>
     <label for="phone">Telefon</label>
@@ -322,12 +320,15 @@
   </div>
   <div>
     <label for="details">Gewünschte Modelle & Stückzahl</label>
-    <textarea id="details" name="details" placeholder="z.B. 20 × Modell B1, 10 × Modell N3 ..."></textarea>
+    <textarea id="details" name="details" placeholder="z.B. 20 × Modell B1, 10 × Modell N3 ..." required></textarea>
   </div>
   <button type="submit" class="btn">Anfrage senden</button>
   <p class="muted" style="margin-top:0.6rem;">
     Hinweis: Das Formular dient als Kontaktanfrage. Wir setzen uns zur Abstimmung der Details mit Ihnen in Verbindung.
   </p>
+
+  <!-- сюда JS будет писать статус -->
+  <p id="formStatus" class="muted" style="margin-top:0.4rem;"></p>
 </form>
       <div>
         <div class="card">
@@ -363,8 +364,10 @@
 <script>
   document.getElementById('yearSpan').textContent = new Date().getFullYear();
 </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
