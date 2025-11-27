@@ -301,7 +301,8 @@
       Schreiben Sie uns oder nutzen Sie das Formular – wir melden uns zeitnah bei Ihnen.
     </p>
     <div class="contact-grid">
-  <form name="contact" netlify>
+  <form name="contact" method="POST" data-netlify="true" action="/success.html">
+  <input type="hidden" name="form-name" value="contact" />
 
   <div>
     <label for="company">Firmenname</label>
@@ -364,5 +365,6 @@
 </script>
 </body>
 </html>
+
 
 
