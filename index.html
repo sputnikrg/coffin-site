@@ -301,32 +301,34 @@
       Schreiben Sie uns oder nutzen Sie das Formular – wir melden uns zeitnah bei Ihnen.
     </p>
     <div class="contact-grid">
-      <form>
-        <div>
-          <label for="company">Firmenname</label>
-          <input id="company" name="company" type="text" placeholder="Bestattungsunternehmen Muster GmbH" />
-        </div>
-        <div>
-          <label for="person">Ansprechpartner</label>
-          <input id="person" name="person" type="text" placeholder="Herr / Frau ..." />
-        </div>
-        <div>
-          <label for="email">E-Mail</label>
-          <input id="email" name="email" type="email" placeholder="beispiel@firma.de" />
-        </div>
-        <div>
-          <label for="phone">Telefon</label>
-          <input id="phone" name="phone" type="tel" placeholder="+49 ..." />
-        </div>
-        <div>
-          <label for="details">Gewünschte Modelle & Stückzahl</label>
-          <textarea id="details" name="details" placeholder="z.B. 20 × Modell B1, 10 × Modell N3 ..."></textarea>
-        </div>
-        <button type="submit" class="btn">Anfrage senden</button>
-        <p class="muted" style="margin-top:0.6rem;">
-          Hinweis: Das Formular dient als Kontaktanfrage. Wir setzen uns zur Abstimmung der Details mit Ihnen in Verbindung.
-        </p>
-      </form>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+
+  <div>
+    <label for="company">Firmenname</label>
+    <input id="company" name="company" type="text" placeholder="Bestattungsunternehmen Muster GmbH" />
+  </div>
+  <div>
+    <label for="person">Ansprechpartner</label>
+    <input id="person" name="person" type="text" placeholder="Herr / Frau ..." />
+  </div>
+  <div>
+    <label for="email">E-Mail</label>
+    <input id="email" name="email" type="email" placeholder="beispiel@firma.de" />
+  </div>
+  <div>
+    <label for="phone">Telefon</label>
+    <input id="phone" name="phone" type="tel" placeholder="+49 ..." />
+  </div>
+  <div>
+    <label for="details">Gewünschte Modelle & Stückzahl</label>
+    <textarea id="details" name="details" placeholder="z.B. 20 × Modell B1, 10 × Modell N3 ..."></textarea>
+  </div>
+  <button type="submit" class="btn">Anfrage senden</button>
+  <p class="muted" style="margin-top:0.6rem;">
+    Hinweis: Das Formular dient als Kontaktanfrage. Wir setzen uns zur Abstimmung der Details mit Ihnen in Verbindung.
+  </p>
+</form>
       <div>
         <div class="card">
           <h3>CHEBURASCHKA</h3>
@@ -363,3 +365,4 @@
 </script>
 </body>
 </html>
+
